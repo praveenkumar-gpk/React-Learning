@@ -1,0 +1,15 @@
+.title_holder
+{
+    margin-top: 2px;
+    height: 10rem;
+    background-color: grey;
+    align-content: center;
+    margin-bottom: 50px;
+}
+.title
+{
+    margin-left: 600px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+

@@ -1,0 +1,14 @@
+.footer
+{
+    margin-top: 10px;
+    background-color: rgb(79, 78, 78);
+    height: 5rem;
+    justify-content: center;
+}
+.inner_div
+{
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+
