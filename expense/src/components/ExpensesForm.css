@@ -1,0 +1,73 @@
+.expenses_page
+{
+    display: flex;
+    justify-content: space-around;
+}
+.expenses_list select
+{
+    width: 5rem;
+}
+.list_items
+{
+    width: 50rem;
+
+}
+.first{
+    list-style: disc;
+}
+.last
+{
+    color: rebeccapurple;
+}
+.item
+{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.item > *
+{
+    margin: 5px;
+}
+.item Button
+{
+    margin-top: 0;
+}
+.first_item
+{
+    list-style-type:square ;
+    font-family:cursive;
+    color:rgb(255, 174, 0);
+}
+
+.expenses_list
+{
+    margin: 30px;
+    padding-bottom: 5px;
+    border: 2px solid rgb(110, 110, 106);
+    background-color: rgb(244, 213, 176);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.expenses_list label,
+.expenses_list select
+{
+    display: block;
+    font-style: oblique;
+    text-align: start;
+    margin-bottom: 8px;
+}
+.expenses_list input
+{
+    border-radius: 7px ;
+    margin-bottom: 8px;
+}
+.expenses_list Button
+{
+    width: 70px;
+    margin-left: 90px;
+}

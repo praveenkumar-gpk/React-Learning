@@ -1,0 +1,21 @@
+
+.cart
+{
+    margin-top: 80px;
+    height: 500px;
+    background-color: darkslateblue;
+    font-family: cursive;
+    text-align: center;
+    opacity: 0.8;
+}
+li
+{
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    border-bottom: 2px solid orange;
+    color: wheat;
+}
+.cart_div{
+    text-align: center;
+}

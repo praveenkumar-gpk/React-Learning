@@ -1,0 +1,28 @@
+.singin_page
+{
+    background-image: url('../../../expense/src/images/5079724.jpg');
+    background-repeat: no-repeat;
+    height: 120vh;
+    display: flex;
+    justify-content: center;;
+}
+.heading
+{
+    color: white;
+}
+.form
+{
+    color: white;
+    background-color: rgb(80, 73, 73,0.6);
+    padding:30px 10px;
+    margin-bottom: 30px;
+}
+.switch_button
+{
+    width: 100%;
+    background-color: rgb(66, 66, 69);
+}
+.title
+{
+    text-align: center;
+}

@@ -1,7 +1,8 @@
-import React, { Fragment, useContext } from "react";
+import React, {  useContext } from "react";
 import ContextForCart from "../store/ContextForCart";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Modal } from 'react-bootstrap'
+import { Offcanvas } from 'react-bootstrap'
+import './Cart.css'
 
 const cartElements = [
     {
@@ -26,29 +27,20 @@ const cartElements = [
 
 const Cart = () => {
     const ctx = useContext(ContextForCart);
-    return <Fragment><div
-            className="modal show"
-            style={{ display: 'block', position: 'initial' }}
-        >   <Modal show={ctx.cartShow} >
-            <Modal.Dialog>
-                <Modal.Header closeButton onClick={ctx.handleCartClick}> 
-                    <Modal.Title>Cart Items</Modal.Title>
-                </Modal.Header>
-
-                <Modal.Body>
-                    {cartElements.map((el)=>{
-                        return<li>{el.title} {el.price} {el.quantity}</li>
-                    })}
-                </Modal.Body>
-
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={ctx.handleCartClick}>Close</Button>
-                    <Button variant="primary">Save changes</Button>
-                </Modal.Footer>
-            </Modal.Dialog>
-            </Modal>
-        </div>
-    </Fragment>
+    return<div>
+        <Offcanvas show={ctx.cartShow} onHide={ctx.handleCartClick} placement="top" className="cart">
+            <Offcanvas.Header closeButton>
+                <Offcanvas.Title className="cart_div" >Cart</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+                <ul>
+                {cartElements.map((el)=>{
+                    return <li key={Math.random()}>{el.title} {el.price} {el.quantity}</li>
+                })}
+                </ul>
+            </Offcanvas.Body>
+        </Offcanvas>
+    </div>
 }
 
 export default Cart;

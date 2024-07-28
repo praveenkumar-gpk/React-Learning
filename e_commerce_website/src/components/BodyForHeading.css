@@ -1,0 +1,18 @@
+#heading_for_home
+{
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-style: oblique;
+    margin-top: 30px;
+
+}
+.row_for_heading
+{
+    padding: 15px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    color: black;
+}

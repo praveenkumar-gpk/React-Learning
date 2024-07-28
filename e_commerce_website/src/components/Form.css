@@ -1,0 +1,38 @@
+label
+{
+    display: block;
+    font-weight:bolder ;
+    color: white;
+    text-align: start;
+}
+.sign_page
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.btn-form
+{
+    padding: 10px;
+}
+.form_sign_pag
+{
+
+    height: 300px;
+    margin: 100px;
+    width: 300px;
+
+}
+#pass,
+#email
+{
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+.h2{
+    font-weight: bolder;
+    color: green;
+    padding: 10px;
+}

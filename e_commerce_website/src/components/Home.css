@@ -1,0 +1,19 @@
+.row_
+{
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: grey;
+    font-weight: bold;
+}
+.rounded_button
+{
+    border-radius: 50%;
+    color: skyblue;
+    height: 50px;
+    width: 50px;
+}
+.img_wrapper
+{
+    background-image: url(../components/images/play_button.jpeg);
+    background-size: 100% 100%;
+}

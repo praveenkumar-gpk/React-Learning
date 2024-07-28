@@ -1,0 +1,49 @@
+.header
+{
+    display: grid;
+    grid-template-columns: 25% auto 15%;
+    height: 10vh;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    margin: 2px;
+    padding: 10px;
+}
+.header button
+{
+    margin: 0;
+    border: 0;
+    padding: 2px;
+    background-color: white;
+}
+.header button:hover
+{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.header_middle
+{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.header_middle input
+{
+    flex: 0.7;
+    height: 8vh;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 10px;
+    outline: 0px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: whitesmoke    ;
+    z-index: 10;
+}
+.header_left
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+

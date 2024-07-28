@@ -1,0 +1,68 @@
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.sidebar_compose:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sidebar button
+{
+    margin: 0;
+    border: 0;
+    padding: 2px;
+    background-color: white;
+}
+.sidebar_compose
+{
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 3px #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    max-width: 150px;
+}
+.sidebar_itemlist
+{
+    display: flex;
+    padding: 0px 25px;
+    border-bottom: 1px solid whitesmoke;
+    margin-right: 20px;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 10vh;
+}
+.sidebar_itemlist:hover
+{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.sidebar_itemlist h4
+{
+    flex: 1;
+    margin-left: 18px;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.sidebar_itemlist p{
+    font-size: 12px;
+}
+.sidebar_itemlist--active
+{
+    background-color: #d93025;
+}
+.sidebar_itemlist--active div,
+.sidebar_itemlist--active h4,
+.sidebar_itemlist--active p,
+.sidebar_itemlist--active:hover
+{
+    background-color: #d93025;
+    font-weight: bold;
+}

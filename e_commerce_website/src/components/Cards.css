@@ -1,0 +1,30 @@
+.music_label
+{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.music_label h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.prod_details
+{
+    padding-top: 10px;
+}
+.symbol
+{
+    color: orange;
+    font-weight: bold;
+}
+.buy_button
+{
+    margin-left: 200px;
+}

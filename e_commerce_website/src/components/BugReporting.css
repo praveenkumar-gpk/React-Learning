@@ -1,0 +1,13 @@
+
+
+.bug_form
+{
+    height: 500px;
+    width: 250px;
+    
+}
+.bug_form input
+{
+    display: block;
+    width: 100%;
+}

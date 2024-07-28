@@ -1,14 +1,27 @@
 .footer
 {
-    margin-top: 10px;
-    background-color: rgb(79, 78, 78);
+    margin-top: 30px;
+    background-color:gray;
     height: 5rem;
-    justify-content: center;
+    color: white;
+    opacity: 0.4;
 }
 .inner_div
 {
+display: flex;
 position: relative;
 top: 50%;
 transform: translateY(-50%);
+justify-content: flex-end;
 }
+
+
+.nav_links
+{
+    font-style: oblique;
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+}
+
 

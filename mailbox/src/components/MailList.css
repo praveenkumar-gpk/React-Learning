@@ -1,0 +1,60 @@
+.mailList
+{
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    border-bottom: 1px solid whitesmoke;
+}
+.mailList:hover
+{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.mailList_left,
+.mailList_middle,
+.mailList_right
+{
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    margin-right: 15px;
+}
+.read h4
+{
+    color: black;
+    font-weight: bold !important;
+}
+.mailList_left h4
+{
+    margin: 0;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+.mailList_middle h4
+{
+    min-width: 150px;
+    font-weight: lighter;
+}
+
+.mailList_right
+{
+    justify-content: center;
+}
+.mailList_middle h4
+{
+    margin: 0;
+    font-size: 18px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mailList p
+{
+    margin: 0;
+    font-size: 14px;
+    white-space:nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    margin-left: 15px;
+}

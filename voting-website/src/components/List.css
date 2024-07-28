@@ -1,0 +1,10 @@
+.list
+{
+    width: 100%;
+    text-align: center; 
+    border-bottom: 2px solid black;
+}
+.list ul
+{
+    list-style: none;
+}

@@ -1,0 +1,56 @@
+.compose
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    margin-right: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 20px;
+}
+.compose p 
+{
+    margin: 0;
+}
+.compose_title button
+{
+    margin: 0;
+    border: 0;
+    padding: 2px;
+    background-color:gray;
+    margin-right: 3px;
+}
+.compose_title button:hover
+{
+    background-color:rgb(106, 103, 103); 
+    border-radius: 5px;
+}
+.compose_title
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+.compose_to input,
+.compose_subject input,
+.compose_body input
+{
+    width: 100%;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    padding: 10px 5px;
+    border-bottom: 1px solid whitesmoke;
+}
+.compose_body 
+{
+   margin-bottom: 5px;
+}
+.compose_footer button
+{
+    min-width: 150px;
+}

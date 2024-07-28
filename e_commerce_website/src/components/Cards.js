@@ -1,48 +1,43 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Button, Row, Col } from 'react-bootstrap'
+import { Button, Row, Col, Container, Image } from 'react-bootstrap'
+import './Cards.css'
+import ContextForCart from "../store/ContextForCart";
+import { NavLink } from "react-router-dom";
 
-const productsArr = [
-    {
-        title: 'Colors',
-        price: 100,
-        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png',
-    },
-    {
-        title: 'Black and white Colors',
-        price: 50,
-        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%202.png',
-    },
-    {
-        title: 'Yellow and Black Colors',
-        price: 70,
-        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%203.png',
-    },
-    {
-        title: 'Blue Color',
-        price: 100,
-        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%204.png',
-    }
-]
+
 const CardData = () => {
-    return <Fragment>
+    const ctx = useContext(ContextForCart);
+    return ctx.isLoggedIn && <Fragment>
+        <Container className="music_label">
+            <h2>Music</h2>
+            <Row md={2}>
+                {ctx.productsArr.map((productsArr)=>{
+                    return <Col>
+                        <div className="music_content">
+                        <div>
+                        <div id="heading_album">
+                            <h2>{productsArr.title}</h2>
+                        </div>
+                        <div className="img_album">
+                            <NavLink to={"/products/"+productsArr.title}><Image src={productsArr.imageUrl}></Image></NavLink>
+                        </div>
+                        <div className="prod_details">
+                            <span className="price">
+                                <span className="symbol">₹</span>
+                                <span>{productsArr.price}</span>
+                                <Button className="buy_button" onClick={ctx.handleBuyClick} size="lg" variant="outline-dark">Buy</Button>
+                            </span>
+                        </div>
+                        </div>
+                        </div>
+                    </Col>
+                    
+                })}
 
-        <Row className="g-4">
-            {productsArr.map((products) => {
-                return <Col><br></br> <Card style={{ width: '35rem' }}>
-                    <Card.Img variant="top" src={products.imageUrl} />
-                    <Card.Body>
-                        <Card.Title>{products.title}</Card.Title>
-                    </Card.Body>
-                    <div>
-                        <Card.Subtitle style={{marginLeft:"270px"}}>₹{products.price}</Card.Subtitle>
-                        <br></br>
-                    </div>
-                    <Button variant="primary" size="=lg">Buy</Button>
-                </Card>
-                </Col>
-            })}
-        </Row>
+            </Row>
+        </Container>
+        <br></br>
     </Fragment>
 }
 

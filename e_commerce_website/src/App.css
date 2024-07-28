@@ -1,15 +1,27 @@
-.title_holder
-{
+.title_holder {
     margin-top: 2px;
     height: 10rem;
     background-color: grey;
     align-content: center;
-    margin-bottom: 50px;
-}
-.title
-{
-    margin-left: 600px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2rem;
+    margin-bottom: 0px;
+    overflow: hidden;
 }
 
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+
+}
+
+.img_cover {
+    background-image: url(./components/images/image.png);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+
+}

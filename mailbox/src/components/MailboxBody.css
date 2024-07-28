@@ -1,0 +1,110 @@
+.mailbody
+{
+    width: 160vh;
+}
+.mailbody_top
+{
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+.mailbody button
+{
+    border: 0;
+    padding: 2px;
+    background-color: white;
+    
+    color: rgb(46, 45, 45);
+    width: 10vh;
+}
+.mailbody button:hover
+{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    z-index: 10;
+}
+.mailbody_top_right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mailbody_top_right p{
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+    margin-right: 15px;
+}
+.mailbody_middle
+{
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    align-items: center;
+}
+.mailbody_middle_left button,
+.mailbody_middle_middle button,
+.mailbody_middle_right button
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 12vh;
+    justify-content: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.mailbody_middle_left p,
+.mailbody_middle_middle p,
+.mailbody_middle_right p{
+    margin: 0;
+    margin-left: 1rem;
+}
+.mailbody_btn--active
+{
+    border-bottom: 2px solid #d93025 !important;
+    font-weight: bold !important;
+    color: #d93025 !important;
+}
+.mailshow_from
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid whitesmoke;
+    align-items: center;
+}
+.mailshow_from div{
+    display: flex;
+}
+.mailshow_from p,
+.mailshow_from h5
+{
+    margin: 0;
+}
+.mailshow_from_email
+{
+    margin-left: 20px !important;
+}
+.mailshow_subject
+{
+    display: flex;
+    height: 10vh;
+   padding: 5px;
+   margin-left: 1%;
+   align-items: center;
+   border-bottom: 1px solid whitesmoke;
+}
+.mailshow_subject h5,
+.mailshow_subject h6{
+    margin: 0;
+    margin-right: 30px !important;
+}
+.mailshow_body
+{
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    height: 60vh;
+}
+
+
